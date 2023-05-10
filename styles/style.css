@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --cor-Fundo: #00171F;
+    --cor-Texto: #fff;
+    --cor-Complementar: #007ea7;
+    --cor-Destaque: #00A7E1;
+    --cor-Botao: #746D75;
+
+    --fonte-Titulo: 'Krona One', sans-serif;
+    --fonte-Texto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalhoMenu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalhoMenuLink {
+    text-decoration: none;
+    color: var(--cor-Destaque);
+    font-family: var(--fonte-Texto);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cabecalhoMenuLink:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-Fundo);
+    color: var(--cor-Texto);
+}
+
+.tituloDestaque {
+    color: var(--cor-Destaque);
+}
+
+.container {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.62rem;
+}
+
+.containerConteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.81rem;
+}
+
+.containerTitulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-Titulo);
+}
+
+.containerParagrafo {
+    font-size: 1.5rem;
+    font-family: var(--cor-Texto);
+    font-weight: 400;
+}
+
+.containerParagrafo a {
+    text-decoration: none;
+    color: var(--cor-Destaque);
+}
+
+.containerSubtitulo {
+    font-family: var(--fonte-Titulo);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.containerLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    gap: 2rem;
+}
+
+.containerBotao {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--cor-Texto);
+    width: 50%;
+    border: 0.125rem solid var(--cor-Destaque);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--fonte-Texto);
+    font-weight: 500;
+    padding: 1.35rem 0rem;    
+}
+
+.containerBotao:visited {
+    color: inherit;
+}
+
+.containerBotao:hover {
+    background-color: var(--cor-Botao) ;
+}
+
+.imagemPerfil {    
+    width: 35%;
+    border: 0.0625rem solid var(--cor-Destaque);
+    border-radius: 1rem;
+    box-shadow: 0.625rem -0.625rem 1rem 0.3125rem var(--cor-Destaque) ;
+}
+
+.rodape {
+    color: #00171F;
+    background-color: var(--cor-Complementar);
+    padding: 1.5rem;
+    font-family: var(--fonte-Texto);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 5% 0%;
+    }
+
+    .cabecalhoMenu{
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 5% 10%;
+    }
+
+    .containerConteudo {
+        padding: 5% 0%;
+        width: 100%;
+    }
+}
